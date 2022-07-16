@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500;1,700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    --primary: #0d6efd;
+    --soft-primary: rgb(143, 227, 255);
+    --soft-dark: #eee;
+    --soft-light: #fafafa;
+    --hard-dark: #c0c0c0;
+}
+.sideBar.open{
+    background-color: var(--soft-light);
+    display: block !important;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    z-index: 2001;
+}
+.content{
+    background-color: var(--soft-dark);
+    overflow: scroll;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+.s-card{
+    border-bottom: 10px;
+}
+.s-card:hover{
+    transform: scale(1.08);
+    box-shadow: 10px 10px 10px var(--hard-dark);
+}
+
+.c-profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: -20px;
+}
+.product{
+    height: 400px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+    }
+.carousel-indicators .indicator{
+    background-color: var(--soft-primary);
+}
+.carousel-indicators .indicator .active{
+    background-color: var(--primary);
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.carousel-item img{
+    width: 220px;
+    height: 200px ;
+    position: absolute;
+    right: 0;
+    top: -120px;
+}
+.pie-canvas{
+    width: 60%;
+}
+.pie-card{
+    height: 450px;
+    width: 100%;
+}
+.subscriptor-card{
+    height: 500px;
+}
+@media screen and (max-width: 1024px) {
+    .carousel-item img{
+        width: 120px !important;
+        height: 120px !important;
+        top: -50px;
+    }
+    .subscriptor-card{
+        height: 350px;
+    }
+    .pie-card{
+        height: 300px;
+    }
+}

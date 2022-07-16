@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../animate.css/animate.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <!-- sideBar start -->
+            <div class="sideBar animate__animated col-6 col-xl-2 col-lg-3 d-none d-lg-block">
+                <div class=" d-block">
+                    <div class="col-12 d-flex align-items-center justify-content-between divider my-3">
+                        <span class="h1" style="font-family: cursive; color: deepskyblue;">
+                            <i class="" data-feather="shopping-bag" style="width: 40px; height: 40px;"></i>
+                            My Shop</span>
+                        <button class="closeBtn btn d-inline d-lg-none">
+                            <i class="fa feather-x fa-xmark" style="font-size: 35px;"></i></div>
+                        </button>
+                </div>
+            </div>
+
+            <!-- content start -->
+            <div class="content col-12 col-xl-10 col-lg-9 row px-0">
+                <!-- header start -->
+                <div class="header row">
+                    <div class="py-3 col-12 py-lg-4 bg-primary my-4 rounded d-flex justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <button class="openBtn btn d-lg-none">
+                                <i class="" data-feather="menu" style="width: 30px; height: 30px;"></i>
+                            </button>
+                            <form action="" class="d-flex align-items-center">
+                                <input type="text" class="rounded-pill mx-1 form-control search-bar d-none d-md-inline" placeholder="Search">
+                                <button class="btn rounded-circle bg-light">
+                                    <i class="" data-feather="search" style="width: 20px; height: 20px;"></i>
+                                </button>
+                            </form>
+                        </div>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="items/icons8-user-48.png" style="width: 25px;" alt=""> Aeri
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Home</a></li>
+                                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><i data-feather="home" style="width: 16px; height: 16px;" ></i></a></li>
+                          <li class="breadcrumb-item"><a href="#">ITEM</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">ADD ITEM</li>
+                        </ol>
+                      </nav>
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <i data-feather="plus-circle" class="text-primary" style="width: 25px; height: 25px;"></i>
+                                        <span class="h4 fw-bolder mb-0">ADD ITEM</span>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-transparent"><i data-feather="list" class="text-primary" style="width: 30px; height: 30px;"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <label for="file">Item Photo</label>
+                                                <i data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Only for picture upload" data-feather="info" title="" style="width: 16px; height: 16px;"></i>
+                                                <input type="file" name="file" id="file" class="form-control my-1">
+                                            </div>
+                                            <div class="form-group">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6"></div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../vendors/feather-icons/dist/feather.js"></script>
+    <script src="../Jquery/dist/jquery.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="../vendors/jquery.counterup/jquery.counterup.js"></script>
+    <script src="../chart.js/dist/chart.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
